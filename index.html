@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <p>BUTIK • STOCKHOLM</p>
+        <h1>Butikssäljare<br />Gina Tricot,<br />Ringen Sthlm</h1>
+      </div>
+    </div>
+
+    <div class="ansok">
+      <h2>Personuppgifter</h2>
+      <div class="formContainer">
+        <form action="https://httpbin.org/anything" method="post">
+          <div class="firstname">
+            <label for="firstName">Förnamn *</label>
+            <input
+              id="FirstName"
+              name="FirstName"
+              type="text"
+              placeholder="Anna"
+              required
+            />
+          </div>
+          <div class="lastname">
+            <label for="lastName">Efternamn *</label>
+            <input
+              id="LastName"
+              name="LastName"
+              type="text"
+              placeholder="Svensson"
+              required
+            />
+          </div>
+          <div class="email">
+            <label for="Email">E-post *</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="anna@exempel.se"
+              required
+            />
+          </div>
+          <div class="phone">
+            <label for="firstName">Telefon *</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="+46 70 123 45 67"
+              required
+            />
+          </div>
+          <div class="file1">
+            <label for="file">Ladda upp CV *</label>
+            <input id="file" name="file" type="file" required />
+          </div>
+          <div class="file2">
+            <label for="file">Övriga dokument</label>
+            <input id="file" name="file" type="file" />
+          </div>
+          <div class="message">
+            <label for="msg">Personligt brev *</label>
+            <textarea
+              id="msg"
+              name="message"
+              placeholder="Skriv ett brev..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="radio">
+            <p>Kan du ställa upp på kort varsel?</p>
+            <input type="radio" value="ja" name="radio" id="ja" /><label
+              for="Ja"
+              >Ja</label
+            >
+            <input type="radio" value="nej" name="radio" id="nej" /><label
+              for="Nej"
+              >Nej</label
+            >
+          </div>
+          <div class="check">
+            <p>När kan du jobba?</p>
+            <input type="checkbox" id="day" name="day" value="Day" />
+            <label for="day">Dag</label><br />
+            <input
+              type="checkbox"
+              id="evening"
+              name="evening"
+              value="Evening"
+            />
+            <label for="evening">Kväll</label><br />
+            <input
+              type="checkbox"
+              id="weekend"
+              name="weekend"
+              value="Weekend"
+            />
+            <label for="weekend">Helg</label><br /><br />
+          </div>
+
+          <div class="password">
+            <label for="Password"
+              >Skriv in ett lösenord för att få andra jobberbjudanden till
+              mail:</label
+            >
+            <input id="pass" name="password" type="password" />
+          </div>
+
+          <div class="send">
+            <button type="submit">Skicka</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
